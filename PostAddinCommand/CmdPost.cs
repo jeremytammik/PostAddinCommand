@@ -26,22 +26,22 @@ namespace PostAddinCommand
       // Built-in Revit commands are listed in the 
       // PostableCommand enumeration
 
-      //RevitCommandId id = RevitCommandId.LookupPostableCommandId( 
-      //  PostableCommand.SheetIssuesOrRevisions );
+      RevitCommandId id_built_in
+        = RevitCommandId.LookupPostableCommandId( 
+          PostableCommand.SheetIssuesOrRevisions );
 
       // External commands defined by add-ins are 
       // identified by the client id specified in 
       // the add-in manifest
 
       string name
-        //= "64b3d907-37cf-4cab-8bbc-3de9b66a3efa:PostAddinCommand.CmdDummy"; // --> id null
         = "64b3d907-37cf-4cab-8bbc-3de9b66a3efa"; // --> id 35024
 
-      RevitCommandId id 
+      RevitCommandId id_addin
         = RevitCommandId.LookupCommandId( 
           name );
 
-      uiapp.PostCommand( id );
+      uiapp.PostCommand( id_addin );
 
       return Result.Succeeded;
     }
