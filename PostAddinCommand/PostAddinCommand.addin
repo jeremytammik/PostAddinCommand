@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>PostAddinCommand Dummy Command</Text>
+    <Description>Test command for PostAddinCommand.</Description>
+    <Assembly>PostAddinCommand.dll</Assembly>
+    <FullClassName>PostAddinCommand.CmdDummy</FullClassName>
+    <ClientId>64b3d907-37cf-4cab-8bbc-3de9b66a3efa</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>PostAddinCommand Post Command</Text>
+    <Description>Post the test command programmatically.</Description>
+    <Assembly>PostAddinCommand.dll</Assembly>
+    <FullClassName>PostAddinCommand.CmdPost</FullClassName>
+    <ClientId>086a3a9d-aa08-4ae8-8300-c8b3b834a1ab</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
