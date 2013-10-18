@@ -13,14 +13,14 @@ namespace PostAddinCommand
   /// lauched programmatically by CmdPost.
   /// </summary>
   [Transaction( TransactionMode.ReadOnly )]
-  class CmdDummy : IExternalCommand
+  class CmdDummy2 : IExternalCommand
   {
     public Result Execute(
       ExternalCommandData commandData,
       ref string message,
       ElementSet elements )
     {
-      TaskDialog.Show( "Test Command", "Hello from CmdDummy!" );
+      TaskDialog.Show( "Test Command", "Hello from CmdDummy2!" );
 
       return Result.Succeeded;
     }

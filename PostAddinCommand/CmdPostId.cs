@@ -1,4 +1,4 @@
-#region Namespaces
+﻿#region Namespaces
 using System;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
@@ -14,7 +14,7 @@ namespace PostAddinCommand
   /// custom add-in.
   /// </summary>
   [Transaction( TransactionMode.ReadOnly )]
-  public class CmdPost : IExternalCommand
+  public class CmdPostId : IExternalCommand
   {
     public Result Execute(
       ExternalCommandData commandData,
@@ -23,25 +23,18 @@ namespace PostAddinCommand
     {
       UIApplication uiapp = commandData.Application;
 
-      // Built-in Revit commands are listed in the 
-      // PostableCommand enumeration
-
-      RevitCommandId id_built_in
-        = RevitCommandId.LookupPostableCommandId( 
-          PostableCommand.SheetIssuesOrRevisions );
-
       // External tool commands defined by add-ins are
       // identified by the client id specified in 
       // the add-in manifest. It is also listed in the 
       // journal file when the command is launched 
       // manually.
 
-      string name
-        = "64b3d907-37cf-4cab-8bbc-3de9b66a3efa"; // --> id 35024
+      //string name
+      //  = "64b3d907-37cf-4cab-8bbc-3de9b66a3efa"; // --> id 35024
 
       RevitCommandId id_addin_external_tool_cmd
-        = RevitCommandId.LookupCommandId( 
-          name );
+        = RevitCommandId.LookupPostableCommandId(
+          (PostableCommand) 35024 );
 
       uiapp.PostCommand( id_addin_external_tool_cmd );
 

@@ -10,11 +10,46 @@
     <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
   </AddIn>
   <AddIn Type="Command">
-    <Text>PostAddinCommand Post Command</Text>
-    <Description>Post the test command programmatically.</Description>
+    <Text>PostAddinCommand Post CmdDummy</Text>
+    <Description>Post the external tool test command programmatically.</Description>
     <Assembly>PostAddinCommand.dll</Assembly>
     <FullClassName>PostAddinCommand.CmdPost</FullClassName>
     <ClientId>086a3a9d-aa08-4ae8-8300-c8b3b834a1ab</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>PostAddinCommandApp</Name>
+    <Assembly>PostAddinCommand.dll</Assembly>
+    <FullClassName>PostAddinCommand.App</FullClassName>
+    <ClientId>6670d299-a37f-4990-9105-5e36137cce43</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>PostAddinCommand Post CmdDummy2</Text>
+    <Description>Post the custom button test command programmatically.</Description>
+    <Assembly>PostAddinCommand.dll</Assembly>
+    <FullClassName>PostAddinCommand.CmdPost2</FullClassName>
+    <ClientId>da9a11df-37ba-48f0-92ab-bac1539086f8</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>PostAddinCommand Post CmdDummy via id</Text>
+    <Description>Post the external tool test command programmatically via its id.</Description>
+    <Assembly>PostAddinCommand.dll</Assembly>
+    <FullClassName>PostAddinCommand.CmdPostId</FullClassName>
+    <ClientId>19858ea1-0383-42a2-9586-30379321d3b6</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>PostAddinCommand Post CmdDummy2 via id</Text>
+    <Description>Post the custom button test command programmatically via its id.</Description>
+    <Assembly>PostAddinCommand.dll</Assembly>
+    <FullClassName>PostAddinCommand.CmdPostId2</FullClassName>
+    <ClientId>4a711de2-27ef-497b-9b9d-1a9b26351bc3</ClientId>
     <VendorId>TBC_</VendorId>
     <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
   </AddIn>

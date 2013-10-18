@@ -53,8 +53,13 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App.cs" />
     <Compile Include="CmdDummy.cs" />
+    <Compile Include="CmdDummy2.cs" />
     <Compile Include="CmdPost.cs" />
+    <Compile Include="CmdPost2.cs" />
+    <Compile Include="CmdPostId.cs" />
+    <Compile Include="CmdPostId2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
